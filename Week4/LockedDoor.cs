@@ -24,12 +24,12 @@ public class LockedDoor : MonoBehaviour {
 
 		// There's only up to 2 red keys associated with any one door.
 		// This is how you initialize an array with a certain number of items
-		redKeyState = new bool[4];
+		redKeyState = new bool[requiredRedKeys.Length];
 
 
 		// Arrays are indexed from 0, meaning the first item in the array has an index of 0
-		redKeyState [0] = false;
-		redKeyState [1] = false;
+		//redKeyState [0] = false;
+		//redKeyState [1] = false;
 		// This line would give an error, because it's trying to get 3rd item
 		//redKeyState [2] = false;
 
@@ -48,10 +48,9 @@ public class LockedDoor : MonoBehaviour {
 
 		// For loop has three parts: iterator initialization, condition, end of loop code
 		for (int i = 0; i < redKeyState.Length; i++) {
-
 			// ...However, if we need the i'th key and don't have it, prevent the 
 			// door from being unlocked.
-			if (requiredRedKeys[i] && !redKeyState[i]) {
+			if (requiredRedKeys [i] && !redKeyState [i]) {
 				unlockDoor = false;
 			}
 		}
