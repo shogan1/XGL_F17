@@ -38,8 +38,6 @@ public class AudioLooper : MonoBehaviour {
 				}
 			}
 		}
-		if (Input.GetKeyDown (KeyCode.Space)) {
-			source.time = 129;
-		}
+
 	}
 }
