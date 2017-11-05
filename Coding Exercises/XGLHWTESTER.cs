@@ -116,8 +116,8 @@ public class XGLHWTESTER : MonoBehaviour {
 			VERIFY_INT (6, 5, XGLHW3.array_length (new int[5]), "[0,0,0,0,0]");
 			VERIFY_INT (6, 3, XGLHW3.array_length (new int[]{1,4,3}), "[1,4,3]");
 
-			VERIFY_INT (7, 3, XGLHW3.array_length (new int[]{1,4,3}), "[1,4,3]");
-			VERIFY_INT (7, 5, XGLHW3.array_length (new int[]{1,1,1,1,1}), "[1,1,1,1,1]");
+			VERIFY_INT (7, 8, XGLHW3.array_sum (new int[]{1,4,3}), "[1,4,3]");
+			VERIFY_INT (7, 5, XGLHW3.array_sum (new int[]{1,1,1,1,1}), "[1,1,1,1,1]");
 
 			VERIFY_INT (8, 4, XGLHW3.array_EvenSum (new int[]{1,4,3}), "[1,4,3]");
 			VERIFY_INT (8, 3, XGLHW3.array_EvenSum (new int[]{1,1,1,1,1}), "[1,1,1,1,1]");
