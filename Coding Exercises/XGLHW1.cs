@@ -8,8 +8,9 @@ using UnityEngine;
 
 // ***INSTRUCTIONS***
 // 1. Fill in the functions with the correct code! All of these functions are 'wrong'.
-// 2. To check your work, save this script, attach it to an empty game object and hit play (command+P)
-// 3. Look in the console (command+shift+C) to see your score and errors.
+// 2. To check your work, save this script. Then...
+// 3. attach the XGLHWTESTER script (NOT THIS ONE) to an empty game object and hit play (command+P)
+// 4. Look in the console (command/ctrl+shift+C) to see your score and errors.
 
 // ***SUBMISSION***
 // Submit a screenshot of your grade to canvas (command+shift+4, click+drag around the box, submit that .png) ! 
