@@ -61,7 +61,7 @@ public class XGLHW1 : MonoBehaviour {
 	}
 
 	// Return the absolute value of a.
-	// Hint: Use the Mathf.abs() function.
+	// Hint: Use the Mathf.Abs() function.
 	// (-10) -> 10
 	// (0) -> 0
 	// (10) -> 10
