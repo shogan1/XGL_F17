@@ -8,10 +8,12 @@ using TMPro;
 //  TextMeshPro object needs to have the Displayer script attached as well
 public class SimpleDialogueDisplayObject : MonoBehaviour {
 
+    [TextArea(5,10)]
     public string textToShow;
     public bool useCharByCharDisplay = false;
 
     SimpleDialogueDisplayer displayer;
+
 
 
 
@@ -27,7 +29,7 @@ public class SimpleDialogueDisplayObject : MonoBehaviour {
                 displayer.startDialogue (textToShow);
             } else {
                 displayer.setMode(false);
-                displayer.textToDisplay = textToShow;
+                displayer.setDialogue(textToShow);
             }
 
         }
@@ -39,7 +41,7 @@ public class SimpleDialogueDisplayObject : MonoBehaviour {
             if (useCharByCharDisplay) {
                 displayer.stopDialogue ();  
             } else {
-                displayer.textToDisplay = "";
+                displayer.setDialogue("");
             }
         }
     }

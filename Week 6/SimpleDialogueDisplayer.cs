@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 // This is attached to a textmeshpro UI text which is named 'text_dialogue'
 // You do not need to edit this script's textToDisplay property - the DisplayObject script does that
 public class SimpleDialogueDisplayer : MonoBehaviour
 {
 
-    public string textToDisplay = "";
+    string textToDisplay = "";
     TMP_Text uiTextElement;
+    public Image dialogueBackgroundImage;
     // Use this for initialization
     void Start()
     {
@@ -88,11 +90,20 @@ public class SimpleDialogueDisplayer : MonoBehaviour
         }
     }
 
+    public void setDialogue(string textt) {
+        textToDisplay = textt;
+        dialogueBackgroundImage.enabled = true;
+        if (textt == "")
+        {
+            dialogueBackgroundImage.enabled = false;
+        }
+    } 
     public void startDialogue(string _textToDisplay)
     {
         characterDisplayState = 1; // Change the state to zero so text starts to display.
         textToDisplay = _textToDisplay;
         mostRecentDisplayedCharacterIndex = 0;
+        dialogueBackgroundImage.enabled = true;
     }
 
     // This function will be called when the player leaves the trigger of a SimpleDialogueDisplayObject.
@@ -100,6 +111,7 @@ public class SimpleDialogueDisplayer : MonoBehaviour
     {
         characterDisplayState = 0;
         textToDisplay = "";
+        dialogueBackgroundImage.enabled = false;
     }
 
 }
