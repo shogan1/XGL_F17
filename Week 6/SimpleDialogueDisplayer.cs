@@ -25,7 +25,11 @@ public class SimpleDialogueDisplayer : MonoBehaviour
 
     // You can use timers to make something only happen every so often
     float timerShowChar = 0;
-    float timerShowCharMAX = 0.03f;
+
+    [Tooltip("How long it takes to show one character in this dialogue box.")]
+    public float timerShowCharMAX = 0.02f;
+
+    public float periodPauseTime = 0.4f;
 
     int characterDisplayState = 0;
 
@@ -77,7 +81,7 @@ public class SimpleDialogueDisplayer : MonoBehaviour
 
                         if (textToDisplay[mostRecentDisplayedCharacterIndex].ToString() == ".")
                         {
-                            timerShowChar = -0.4f;
+                            timerShowChar = -periodPauseTime;
                         }
 
                         uiTextElement.text += textToDisplay[mostRecentDisplayedCharacterIndex];
