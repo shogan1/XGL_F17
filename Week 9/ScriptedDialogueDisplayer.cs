@@ -68,6 +68,7 @@ public class ScriptedDialogueDisplayer : MonoBehaviour {
     }
     void setFlag(string key, int value) {
         if (flagBox.ContainsKey(key) == false) flagBox.Add(key, 0);
+        print("Set " + key + " to " + value.ToString());
         flagBox[key] = value;
     }
 
