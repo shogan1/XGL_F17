@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Root>
+<DialogHolder>
+
+<d name="enterSpace">
+<lines>
+	<l auto="true">This line has an autoTag</l>
+	<l>And this line doesn't.</l>
+</lines>
+</d>
+
+<d name="other scene">
+<lines>
+	<l auto="true">This is some other conversation.</l>
+</lines>
+</d>
+
+
+</DialogHolder>
+</Root>
