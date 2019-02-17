@@ -17,9 +17,6 @@ public class SceneChangeTrigger : MonoBehaviour {
 	public string destinationScene;
 	public string destinationName;
 
-    private void Start() {
-        print(123);
-    }
 
     // Use this function in the "Start" function of some GameObject that you want to move. E.g., the player.
     public static void moveSomethingToStoredDestination(Transform thingToMove) {
