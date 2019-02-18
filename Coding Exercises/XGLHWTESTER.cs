@@ -86,12 +86,14 @@ public class XGLHWTESTER : MonoBehaviour {
 			VERIFY_STRING (6,"ors",XGLHW2._06_redundantSubstring ("horse",3,1),"horse,3,1");
 			VERIFY_STRING (6,"mcdon",XGLHW2._06_redundantSubstring ("mcdonald",5,0),"mcdonalds,5,0");
 
+            /*
 			VERIFY_STRING (7,"oyb",XGLHW2._07_trickyString ("boy",0),"boy,0");
 			VERIFY_STRING (7,"yob",XGLHW2._07_trickyString ("boy",1),"boy,1");
 			VERIFY_STRING (7,"ybo",XGLHW2._07_trickyString ("boy",2),"boy,2");
 			VERIFY_STRING (7,"abanan",XGLHW2._07_trickyString ("banana",5),"banana,5");
 			VERIFY_STRING (7,"ananab",XGLHW2._07_trickyString ("banana",0),"banana,0");
 			VERIFY_STRING (7,"herwWERWrraaaeru",XGLHW2._07_trickyString ("aaeruaherwWERWrr",5),"aaeruaherwWERWrr,5");
+            */
 
 			printGrade (2);
 		}

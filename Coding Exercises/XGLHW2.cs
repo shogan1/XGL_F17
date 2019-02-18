@@ -36,18 +36,22 @@ public class XGLHW2 : MonoBehaviour {
 	}
 
 
-	/* Given an input string, return the input string but with its first character
+    /* Given an input string, return the input string but with its first character
 	 Repeated before and after the original string.
 	 horse -> hhorseh
-	 banana -> bbananab */
-	static public string _03_front1(string input) {
+	 banana -> bbananab
+
+     
+     You can get a character in a string using array notation: input[i] where 'i' is the index of the character you want
+     Note that to convert a single character from a string, you need to use .ToString() , e.g.:
+                string singleCharacter = input[4].ToString() .
+                               
+         */
+    static public string _03_front1(string input) {
 		return "";
 	}
 
 	/* Return true if the input string starts with the letter 'a' or 'A'.
-	 You can get a character in a string using array notation: input[i] where 'i' is the index of the character you want
-	 Note that to convert a single character from a string, you need to use .ToString() , e.g.:
-				input[4].ToString() ...
 
 	 "apple" -> true
 	 "Arkansas" -> true
@@ -65,7 +69,14 @@ public class XGLHW2 : MonoBehaviour {
 	("candy") → "not candy"
 	("x") → "not x"
 	("not bad") → "not bad" */
-	static public string _05_notString(string input) {	
+	static public string _05_notString(string input) {
+
+        // Example code
+        // string test = "not sean";
+        // int notIndex = test.IndexOf("not"); // notIndex will be 0
+        // test = "sean";
+        // notIndex = test.IndexOf("not"); // notIndex will be -1
+
 		return "";
 	}
 
@@ -82,17 +93,19 @@ public class XGLHW2 : MonoBehaviour {
 	// horse, 3, 1 -> "ors"
 	// 
 	static public string _06_redundantSubstring(string input, int length, int startIndex) {
-		return "";
-	}
 
-	// Return the string, but with the parts before and after a certain character flipped.
-	// index will always be less than input.Length.
-	// "apple",2 -> "le"+"p"+"ap" (or "lepap")
-	// "boy",0 -> "oy"+""+"b" (or "oyb")
-	// "boy",1 -> "y"+"o"+"b" (or "yob")
-	// "boy",2 -> ""+"y"+"bo" (or "ybo")
-	static public string _07_trickyString(string input, int index) {
-		return "";
+
+        // Example code (will not solve the problem on its own
+        /*
+        string test = "art institute";
+        string firstPart = test.Substring(0, 3); // firstPart is now "art"
+        string secondPart = test.Substring(4, 9); // secondPart is now "institute"
+        int length = firstPart.Length; // length is now 3
+        length = secondPart.Length; // length is now 9
+        */
+
+
+        return "";
 	}
 
 
@@ -157,4 +170,19 @@ public class XGLHW2 : MonoBehaviour {
 
 		partOfString = partOfString + "1";
 	}
+
+
+
+    // 2019/02 - YOu don't have to do this one
+
+    // Return the string, but with the parts before and after a certain character flipped.
+    // index will always be less than input.Length.
+    // "apple",2 -> "le"+"p"+"ap" (or "lepap")
+    // "boy",0 -> "oy"+""+"b" (or "oyb")
+    // "boy",1 -> "y"+"o"+"b" (or "yob")
+    // "boy",2 -> ""+"y"+"bo" (or "ybo")
+    static public string _07_trickyString(string input, int index) {
+        return "";
+    }
+
 }
