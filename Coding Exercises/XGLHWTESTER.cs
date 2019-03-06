@@ -78,9 +78,9 @@ public class XGLHWTESTER : MonoBehaviour {
 			VERIFY_BOOL(4,true,XGLHW2._04_startsWithA ("apple"),"apple");
 			VERIFY_BOOL(4,true,XGLHW2._04_startsWithA ("Arby's"),"Arby's");
 
-			VERIFY_STRING (5,"notapple",XGLHW2._05_notString ("apple"),"apple");
+			VERIFY_STRING (5,"not apple",XGLHW2._05_notString ("apple"),"apple");
 			VERIFY_STRING (5,"not horse",XGLHW2._05_notString ("not horse"),"not horse");
-			VERIFY_STRING (5,"notNOT apple",XGLHW2._05_notString ("NOT apple"),"NOT apple");
+			VERIFY_STRING (5,"not NOT apple",XGLHW2._05_notString ("NOT apple"),"NOT apple");
 
 			VERIFY_STRING (6,"",XGLHW2._06_redundantSubstring ("horse",6,1),"horse,6,1");
 			VERIFY_STRING (6,"ors",XGLHW2._06_redundantSubstring ("horse",3,1),"horse,3,1");
